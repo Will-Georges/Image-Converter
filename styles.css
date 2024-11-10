@@ -1,0 +1,98 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+    margin: 0;
+}
+
+/* Container styling */
+.container {
+    text-align: center;
+    padding: 40px;
+    width: 300px;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* File input styling */
+.file-input, .format-select, .custom-input {
+    width: 100%; /* Ensures the file input, select, and custom inputs are same width */
+    padding: 10px;
+    padding-right: 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+/* Label styling */
+.format-label, .scale-label, .slider-label, .custom-label {
+    margin-top: 20px;
+    display: block;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Scale options container */
+.scale-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* Individual scale option buttons */
+.scale-option {
+    padding: 10px;
+    font-size: 14px;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s, color 0.3s;
+    flex: 1;
+    margin: 0 2px;
+}
+
+/* Hover and active styles for scale options */
+.scale-option:hover {
+    background-color: #e9e9e9;
+}
+
+.scale-option.active {
+    background-color: #4CAF50;
+    color: #ffffff;
+    border-color: #4CAF50;
+}
+
+/* Convert button styling */
+.convert-button {
+    width: 100%; /* Makes the convert button the same width as the other elements */
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.convert-button:hover {
+    background-color: #45a049;
+}

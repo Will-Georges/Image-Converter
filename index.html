@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Converter</h1>
+        
+        <!-- File Input -->
+        <input type="file" id="inputFile" class="file-input" accept="image/*">
+        
+        <!-- Format Selector -->
+        <label for="formatSelect" class="format-label">Select Format</label>
+        <select id="formatSelect" class="format-select">
+            <option value="png">PNG</option>
+            <option value="jpeg">JPEG</option>
+            <option value="webp">WEBP</option>
+            <option value="svg">SVG</option>
+        </select>
+        
+        <!-- Scale Options -->
+        <label class="scale-label">Select Scale</label>
+        <div class="scale-options">
+            <div class="scale-option" data-scale="0.5">0.5x</div>
+            <div class="scale-option active" data-scale="1">1x</div>
+            <div class="scale-option" data-scale="2">2x</div>
+            <div class="scale-option" data-scale="4">4x</div>
+            <div class="scale-option" data-scale="8">8x</div>
+        </div>
+
+        <!-- Custom Width & Height Inputs -->
+        <label for="customWidth" class="custom-label">Width (px)</label>
+        <input type="number" id="customWidth" class="custom-input" placeholder="Enter width">
+        
+        <label for="customHeight" class="custom-label">Height (px)</label>
+        <input type="number" id="customHeight" class="custom-input" placeholder="Enter height">
+        
+        <!-- Convert Button -->
+        <button id="convertButton" class="convert-button">Convert</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
